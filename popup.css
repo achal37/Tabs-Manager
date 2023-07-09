@@ -1,0 +1,198 @@
+.input-container{
+    padding: 3px 4px;
+    margin: 3px 2px;
+    position: fixed;
+    width: 17.8rem;
+    backdrop-filter: blur(9px);
+    /* Apply the blur effect */
+}
+
+.input-container {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+.header {
+    top: 10px;
+    right: 10px;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+#groupInput {
+    border: 1.5px solid rgb(44, 207, 207);
+    border-radius: 10px;
+    margin: 3px 4px;
+    padding-right: 6px;
+}
+
+#groupInput:hover {
+    border: 3px solid #2ccfcf;
+    font-weight: 500;
+    color: #020202;
+}
+
+#groupButton {
+    background-color: #f6f6f8;
+    border: 2px solid rgb(44, 207, 207);
+    border-radius: 10px;
+    font-weight: 600;
+    color: #169696; 
+}
+
+#groupButton:hover {
+    background-color: #2ccfcf;
+    color: white;
+    font-size: medium;
+    font-family: "Acme";
+}
+
+.sidebar {
+    position: relative;
+    width: 300px;
+    max-height: 400px;
+    background-color: #3a4258;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+    transition: width 0.3s ease;
+    padding: 8px 4px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: darkgrey;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
+}
+
+.collapsed {
+    width: 62px;
+    opacity: 1;
+}
+
+.collapsed #groupInput,
+.collapsed button {
+    display: none;
+}
+
+.tab-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.tab-list li {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.tab-list li:hover {
+    background-color: #282c36;
+    color: #f6f6f8;
+    font-weight: 1000;
+}
+
+.tab-info {
+    padding: 4px 2px;
+    display: flex;
+    align-items: center;
+    color: #f6f6f8;
+    font-size: x-small;
+}
+
+
+.tab-number {
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+}
+
+.icon {
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 30%;
+    margin-right: 0.5px;
+    flex-shrink: 0;
+}
+
+.title {
+    margin: 0;
+    white-space: nowrap;
+    flex-grow: 0;
+    margin-left: 0.5rem;
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 14px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    display: flex;
+    opacity: 0;
+    width: 0;
+    white-space: nowrap;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 12px;
+    left: 1px;
+    bottom: 1px;
+    background-color: rgb(7, 128, 248);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #ADEFD1FF;
+}
+
+input:focus+.slider {
+    background-color: #ADEFD1FF;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

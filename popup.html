@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet'>
+    <link rel="stylesheet" href="./popup.css" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="input-container">
+            <input type="text" id="groupInput" placeholder="Enter group command" />
+            <button id="groupButton">Group</button>
+            <div class="header">
+                <label class="switch">
+                    <input type="checkbox" id="collapseToggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <ul class="tab-list"></ul>
+    </div>
+
+    <script src="./popup.js" type="module"></script>
+</body>
+
+</html>

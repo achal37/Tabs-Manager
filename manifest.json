@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Tab Manager",
+    "version": "1.0",
+    "description": "The Tab Manager Chrome Extension is a powerful tool that helps you organize and manage your browser tabs with ease. It allows you to create tab groups, collapse the tab list for a clutter-free view, and quickly navigate to specific tabs.",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "/images/icon-16.png",
+        "32": "/images/icon-32.png",
+        "48": "/images/icon-48.png",
+        "128": "/images/icon-128.png"
+      }
+    },
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "permissions": [
+      "tabs",
+      "tabGroups"
+    ],
+    "icons": {
+      "16": "/images/icon-16.png",
+      "32": "/images/icon-32.png",
+      "48": "/images/icon-48.png",
+      "128": "/images/icon-128.png"
+    }
+  }
+  
